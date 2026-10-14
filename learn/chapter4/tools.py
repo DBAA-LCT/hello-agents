@@ -64,7 +64,7 @@ class ToolExecutor:
         """
         根据函数名获取一个工具的执行函数
         """
-        return self.tools,get(name, {}).get("func")
+        return self.tools.get(name, {}).get("func")
 
     def getAvaliableTools(self) -> str:
         """
